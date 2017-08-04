@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Levenshtein automaton</title>
+    <title>Levenshtein Automaton</title>
   </head>
 
   <body>
@@ -15,19 +15,19 @@
 
     <h3>Introduction</h3>
 
-    <p>The Levenshtein-distance between two words is the minimal number of
-      insertions, deletions or substitutions that are needed to transform
-      one word into the other. Levenshtein-automata of degree n for a word
-      W are defined as finite state automata that regognize the set of all
-      words V where the Levenshtein-distance between V and W does not
-      exceed n. [Schulz and Mihov 2002]
-
-      Levenshtein automata may be used for spelling correction, by finding
-      words in a given dictionary that are close to a misspelled word.
-      In this application, once a word is identified as being misspelled,
-      its Levenshtein automaton may be constructed, and then applied to
-      all of the words in the dictionary to determine which ones are
-      close to the misspelled word. [Schulz and Mihov 2002]
+    <p>The Levenshtein-distance between two words is the minimal
+    number of insertions, deletions or substitutions that are needed
+    to transform one word into the other. Levenshtein-automata of
+    degree <i>n</i> for a word <i>W</i> are defined as finite state
+    automata that recognise the set of all words <i>V</i> where the
+    Levenshtein-distance between <i>V</i> and <i>W</i> does not exceed
+    <i>n</i> [Schulz and Mihov 2002]. Levenshtein automata may be used
+    for spelling correction, by finding words in a given dictionary
+    that are close to a misspelled word.  In this application, once a
+    word is identified as being misspelled, its Levenshtein automaton
+    may be constructed, and then applied to all of the words in the
+    dictionary to determine which ones are close to the misspelled
+    word [Schulz and Mihov 2002].
     </p>
 
     <h3>Assignment (80%)</h3>
@@ -42,10 +42,11 @@
 	<pre>
 	  levenshtein :: String -> Int -> [String] -> [Bool]
 	</pre>
-	that takes an string W, a integer n and a list of stings S, and
-	return a list of boolean such that its i-th element is True when
-	the i-th element of S has a Levenshtein-distance from W of at most n,
-	using a Levenshtein-automaton.
+	that takes an string <i>W</i>, an integer <i>n</i> and a list
+	of strings <i>S</i>, and return a list of Booleans such that
+	its <i>i</i>-th element is <i>True</i> when the <i>i</i>-th
+	element of <i>S</i> has a Levenshtein-distance from <i>W</i>
+	of at most <i>n</i>, using a Levenshtein-automaton.
       </li>
 
       <li>(10%)
@@ -145,9 +146,10 @@
 
     <h3>Bibliography</h3>
     <ul>
-      <li>Klaus Schulz and Stoyan Mihov (2002).
-	Fast String Correction with Levenshtein-Automata.
-	International journal of document analysis and recognition. </li>
+      <li>Klaus U. Schulz and Stoyan Mihov (2002).  Fast String
+      Correction with Levenshtein-Automata.  International Journal of
+      Document Analysis and Recognition. Volume 5, Issue 1, pp
+      67-85.</li>
     </ul>
 
     <hr/>
